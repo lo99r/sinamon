@@ -9,8 +9,8 @@ if (file_exists("users.json")) {
   $json[count($json)]["id"] = $id;
   $json[count($json)]["password"] = $password;
   $json[count($json)]["realsex"] = $realsex;
-  $encode = json_encode($json)
-  $file_put_contents("users.json", $encode);
+  $encode = json_encode($json);
+  file_put_contents("users.json", $encode);
 } else {
   $json[count($json)]["id"] = $id;
   $json[count($json)]["password"] = $password;

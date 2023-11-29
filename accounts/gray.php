@@ -17,3 +17,6 @@ if (file_exists("users.json")) {
   $json[count($json)]["realsex"] = $realsex;
   $encode = json_encode($json);
   $file_put_contents("users.json", $encode);
+}
+echo <a href="#">www</a>
+?>
